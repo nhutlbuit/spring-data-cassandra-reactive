@@ -13,18 +13,18 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/api/translate")
+@RequestMapping("/api")
 public class TranslateController {
 
     @Autowired
     TranslateRepository translateRepository;
 
-    @GetMapping("/list")
+    @GetMapping("/translate")
     Flux<Translate> getList() {
         return translateRepository.findAll();
     }
 
-    @PostMapping("/save")
+    @PostMapping("/translate")
     Mono<Translate> save(@RequestBody Translate translate) {
         return translateRepository.save(translate);
     }
