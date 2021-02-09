@@ -1,6 +1,8 @@
-# spring-boot-data-cassandra-embedded
+# spring-boot-data-cassandra
 
-https://www.guru99.com/cassandra-architecture.html
+### https://www.guru99.com/cassandra-architecture.html
+### https://hoidapit.com/bigdata/huong-dan-ve-cassandra-cho-nguoi-moi-bat-dau-hoc-trong-3-ngay-8m8qntq
+
 Cassandra stores data on different nodes with a peer to peer distributed fashion architecture.
 
 All the nodes exchange information with each other using Gossip protocol. Gossip is a protocol in Cassandra by which nodes can communicate with each other.

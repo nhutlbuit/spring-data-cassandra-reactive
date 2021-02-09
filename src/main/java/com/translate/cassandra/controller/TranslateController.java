@@ -27,4 +27,19 @@ public class TranslateController {
     Mono<Translate> save(@RequestBody Translate translate) {
         return translateRepository.save(translate);
     }
+
+//    @PostMapping("/translate")
+//    Mono<Translate> addNewVersion(@RequestBody String lang, String baseText) {
+//        return translateRepository.save(translate);
+//    }
+
+    @GetMapping("/translate/findByKeyWord")
+    Flux<Translate> findByKeyWord(String keyWord) {
+        return translateRepository.findByVersionContentNotContains(keyWord);
+    }
+
+    @GetMapping("/translate/replace")
+    Flux<Translate> replace(String keyWord) {
+        return translateRepository.findAll();
+    }
 }
