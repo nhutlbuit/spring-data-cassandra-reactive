@@ -1,6 +1,5 @@
 package com.translate.cassandra.controller;
 
-
 import com.translate.cassandra.model.Translate;
 import com.translate.cassandra.repository.TranslateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
